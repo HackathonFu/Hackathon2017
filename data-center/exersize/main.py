@@ -10,13 +10,13 @@ def main():
          coordinate = (r,s)
          unavaible_slot_list.append(coordinate)
     server_capacity_list = []
-    #print unavaible_slot_list
+    print unavaible_slot_list
     for server_capacity in range(int(unavaible_slots),int(unavaible_slot)+int(number_of_server)+1):
          # s stands for slots_taken , c stands for capacity
          s,c = lines[server_capacity].split(" ")
          coordinate = (s,c)
          server_capacity_list.append(coordinate)
-    #print server_capacity_list
+    print server_capacity_list
     f.close()
 
 
